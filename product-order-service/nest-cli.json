@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/product-order-service/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/product-order-service/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/product-order-service",
+  "projects": {
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "product-order-service": {
+      "type": "application",
+      "root": "apps/product-order-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/product-order-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/product-order-service/tsconfig.app.json"
+      }
+    }
+  }
+}
