@@ -1,0 +1,100 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* MAIN CONTAINER — reduced width for smaller content */
+.container {
+  padding: 20px;
+  max-width: 750px;     /* reduced from 900px */
+  margin: auto;
+}
+
+/* PRODUCT & CART CARDS — compact design */
+.card {
+  background: white;
+  padding: 14px;        /* reduced from 18px */
+  margin: 10px 0;       /* reduced from 12px */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* TITLES — slightly smaller */
+.card-title {
+  font-size: 16px;      /* reduced from 18px */
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* INFO SECTION */
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* INPUTS */
+input {
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  width: 260px;         /* reduced from 300px */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* MAIN BUTTONS */
+button,
+.btn-main {
+  padding: 9px 15px;    /* slightly smaller */
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;      /* reduced font size */
+}
+
+button:hover,
+.btn-main:hover {
+  opacity: 0.85;
+}
+
+/* EDIT BUTTON */
+.btn-edit {
+  padding: 7px 12px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.btn-edit:hover {
+  background-color: #0065d1;
+}
+
+/* DELETE BUTTON */
+.btn-delete {
+  padding: 7px 12px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.btn-delete:hover {
+  background-color: #b32130;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;             /* slightly tighter */
+}
