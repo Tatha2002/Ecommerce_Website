@@ -3,7 +3,7 @@
 This project is a basic e-commerce system built using NestJS microservices.
 It consists of two separate services that communicate using RabbitMQ and use PostgreSQL as their database.
 
-📌 Overview
+## Overview
 
 The system contains:
 
@@ -19,7 +19,7 @@ Manages Customers (CRUD)
 Listens to RabbitMQ events and updates its own database for synchronization
 Each microservice has its own database, ensuring loose coupling and real microservice architecture.
 
-🚀 Tech Stack
+## Tech Stack
 
 NestJS (Microservices)
 PostgreSQL (TypeORM)
@@ -36,7 +36,7 @@ Sends RabbitMQ event
 Customer service receives the event and updates its DB
 Both services stay consistent using event-driven communication
 
-🧩 Main Features
+## Main Features
 
 CRUD for Products
 CRUD for Customers
@@ -45,10 +45,8 @@ RabbitMQ-based sync between services
 Separate PostgreSQL DB for each microservice
 Clean modular NestJS structure
 
-🛠️ Running the Project Clone:
-git clone https://github.com/Tatha2002/Ecommerce_Website.git
+## Install Dependencies:
 
-Install Dependencies:
 Inside each microservice:
 
 npm install
@@ -59,7 +57,7 @@ docker-compose up -d
 Run Microservices:
 npm run start:dev
 
-🧪 API Endpoints (Short)
+## API Endpoints (Short)
 
 Product Service
 
@@ -88,4 +86,4 @@ Full CRUD implementation
 RabbitMQ publisher/subscriber
 Next.js frontend (basic UI)
 PostgreSQL setup
-README (this file)
+README 
