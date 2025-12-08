@@ -35,7 +35,6 @@ export class CustomersController {
     return this.customersService.remove(id);
   }
 
-  // NEW — Get Order History for a Customer
   @Get(':id/history')
   getHistory(@Param('id') id: string) {
     return this.customersService.getOrderHistory(id);

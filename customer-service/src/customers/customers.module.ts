@@ -8,7 +8,7 @@ import { RabbitModule } from '../rabbit/rabbit.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([Customer, OrderHistory]),  // ⬅ Added OrderHistory entity
+    TypeOrmModule.forFeature([Customer, OrderHistory]),  
     RabbitModule,
   ],
   controllers: [CustomersController],
