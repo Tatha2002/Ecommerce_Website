@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 export type CartItem = {
-  id: string;        // product.id (uuid)
+  id: string;        
   name: string;
   price: number;
   quantity: number;
